@@ -1,3 +1,3 @@
-痘痘偵測模型：
+ 指甲偵測模型（部署在heroku上）：
 
-https://drive.google.com/file/d/1rMAGNvnXoY9Q_mtuZ_Kzf3xLucX3jXdB/view?usp=sharing
+https://nail-test.herokuapp.com/nail-classifier/
