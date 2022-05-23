@@ -42,8 +42,9 @@ def get_severity(num):
 
 @app.route("/")
 def describe():
-    device = ""
-    if(device == ""):
+    cuda = torch.cuda.is_available()
+    device = "CUDA"
+    if(cuda == False):
         device = 'CPU'
     message = 'The server is working with {}, please start to check the functions of feature.'.format(
         device)
@@ -93,6 +94,6 @@ def acne_classfier():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080,
-            debug=False, threaded=False)
+    app.run(host='0.0.0.0', port=5000,
+            debug=False)
     pass
